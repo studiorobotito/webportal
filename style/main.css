@@ -1,6 +1,21 @@
+@font-face {
+  font-family: "Brown";
+  src: url("css/fonts/brown-regular.eot");
+  src:
+  url("css/fonts/brown-refular.woff") format("woff"),
+  /* url("css/fonts/Harabara.svg#filename") format("svg"); */
+}
+@font-face {
+  font-family: "Visuelt";
+  src: url("css/fonts/visuelt-regular-web.ttf");
+}
+
 body{
-  padding:50px;
-  font-size: 16px;
+  padding: 15px 80px;
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: "Brown", sans-serif;
+  color: #424242;
 }
 
 img{
@@ -9,13 +24,59 @@ img{
 }
 
 header{
-  padding-bottom: 50px;
+  font-size: 36px;
+  padding-bottom:10px;
+  display: flex;
+  align-items: baseline; /* align vertical */
 }
 
 nav{
-  font-size: 18px;
+  font-size: 24px;
+  padding-bottom: 50px;
+  font-family: "Visuelt";
+}
+nav a{
+  padding-right:15px;
 }
 
 a{
   text-decoration: none;
+  font-family: sans-serif;
+  color: #424242;
+}
+
+#topstripe{
+  position: fixed;
+  top:0;
+  left:0;
+  height: 5px;
+  width: 100%;
+
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
 }
