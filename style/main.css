@@ -15,6 +15,11 @@
   src: url("css/fonts/visuelt-regular-web.ttf");
 }
 
+html{
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
 body{
   padding: 15px 80px;
   font-size: 24px;
@@ -69,9 +74,37 @@ a:hover{
 .row{ padding-bottom: 10px; }
 
 
-/* ---------------- */
+/* -------------  Layout  ------------ */
 /* fluid 5 columns */
 .grid-sizer,
 .grid-item { width: 33%; padding:10px; }
 /* 2 columns */
 .grid-item--width2 { width: 66%; }
+
+/* Responsive */
+
+@media all and (max-width: 1000px) {
+  .grid-sizer,
+  .grid-item { width: 50%; padding:10px; }
+  /* 2 columns */
+  .grid-item--width2 { width: 100%; }
+
+  body{
+    padding: 15px 50px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .grid-sizer,
+  .grid-item { width: 100%; padding:10px; }
+  /* 2 columns */
+  .grid-item--width2 { width: 100%; }
+
+  body{
+    padding:10px;
+  }
+
+  .head{
+    padding-left:15px;
+  }
+}

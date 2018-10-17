@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Robotito</title>
 
     <meta name="description" content="hello robotito">
@@ -23,39 +23,33 @@
         itemSelector: '.grid-item',
         // use element for option
         columnWidth: '.grid-sizer',
-        percentPosition: true
+        percentPosition: true,
+
+        // fitWidth: true
       })
     });
     </script>
   </head>
   <body>
-    <!-- <div id="topstripe" class="wrapper"></div> -->
+    <div class="head">
+      <header>
+        Robotito
+      </header>
+      <nav>
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <!-- <a href="">Contact</a> -->
+      </nav>
+    </div>
 
-        <header>
-          Robotito
-        </header>
-        <nav>
-          <a href="index.html">Work</a>
-          <a href="about.html">About</a>
-          <!-- <a href="">Contact</a> -->
-        </nav>
-
-        <!-- <div id="container">
-          <div class="item"><img src="img/projects_radiation.png"></div>
-          <div class="item"><img src="img/projects_tapx.png"></div>
-          <div class="item"><img src="img/projects_surveillance.png"></div>
-          <div class="item"><img src="img/projects_captcha.png"></div>
-          <div class="item"><img src="img/projects_holdtohold.png"></div>
-        </div> -->
-
-        <div class="grid">
-          <div class="grid-sizer"></div>
-          <div class="grid-item"><img src="img/projects_holdtohold.png"></div>
-          <div class="grid-item"><img src="img/projects_captcha.png"></div>
-          <div class="grid-item"><img src="img/projects_tapx.png"></div>
-          <div class="grid-item"><img src="img/projects_radiation.png"></div>
-          <div class="grid-item"><img src="img/projects_surveillance.png"></div>
-        </div>
+    <div class="grid">
+      <div class="grid-sizer"></div>
+      <div class="grid-item"><img src="img/projects_holdtohold.png"></div>
+      <div class="grid-item"><img src="img/projects_captcha.png"></div>
+      <div class="grid-item"><img src="img/projects_tapx.png"></div>
+      <div class="grid-item"><img src="img/projects_radiation.png"></div>
+      <div class="grid-item"><img src="img/projects_surveillance.png"></div>
+    </div>
 
     <script>
       $(function(){
