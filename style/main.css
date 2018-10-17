@@ -2,8 +2,13 @@
   font-family: "Brown";
   src: url("css/fonts/brown-regular.eot");
   src:
-  url("css/fonts/brown-refular.woff") format("woff"),
-  /* url("css/fonts/Harabara.svg#filename") format("svg"); */
+  url("css/fonts/brown-regular.woff") format("woff")
+}
+@font-face {
+  font-family: "Brown-Light";
+  src: url("css/fonts/brown-light.eot");
+  src:
+  url("css/fonts/brown-light.woff") format("woff")
 }
 @font-face {
   font-family: "Visuelt";
@@ -19,8 +24,19 @@ body{
 }
 
 img{
-  max-width: 500px;
-  box-shadow: 2px 3px 15px 1px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  z-index:0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+img:hover{
+  box-shadow:rgba(0, 0, 0, 0.4) 0 3px 3px 0;
+  -webkit-box-shadow:rgba(0, 0, 0, 0.4) 0 3px 3px 0;
+  -moz-box-shadow:rgba(0, 0, 0, 0.4) 0 3px 3px 0;
 }
 
 header{
@@ -33,50 +49,29 @@ header{
 nav{
   font-size: 24px;
   padding-bottom: 50px;
-  font-family: "Visuelt";
+  font-family: "Brown-Light";
 }
 nav a{
   padding-right:15px;
+  color: #424242;
 }
 
 a{
   text-decoration: none;
-  font-family: sans-serif;
-  color: #424242;
+  color: #00b23b;
 }
 
-#topstripe{
-  position: fixed;
-  top:0;
-  left:0;
-  height: 5px;
-  width: 100%;
+a:hover{
+  color:blue;
+}
 
-  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-  background-size: 1800% 1800%;
+.no-padding_left{ padding-left: 0px}
+.row{ padding-bottom: 10px; }
 
-  -webkit-animation: rainbow 18s ease infinite;
-  -z-animation: rainbow 18s ease infinite;
-  -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;}
 
-@-webkit-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-moz-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-o-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
+/* ---------------- */
+/* fluid 5 columns */
+.grid-sizer,
+.grid-item { width: 33%; padding:10px; }
+/* 2 columns */
+.grid-item--width2 { width: 66%; }
