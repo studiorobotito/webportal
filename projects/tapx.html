@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Robotito</title>
+
+    <meta name="description" content="hello robotito">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="author" content="Emily Pan & Ryan Mather">
+    <meta name="keyword" content="NYC, Brooklyn, RISD, Design, Technology">
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="../style/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../style/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+    $(function(){
+      $('.grid').masonry({
+        // set itemSelector so .grid-sizer is not used in layout
+        itemSelector: '.grid-item',
+        // use element for option
+        columnWidth: '.grid-sizer',
+        percentPosition: true,
+
+        // fitWidth: true
+      })
+    });
+    </script>
+  </head>
+  <body>
+    <div class="head">
+      <header>
+        Robotito
+      </header>
+      <nav>
+        <a href="../index.html">Work</a>
+        <a href="../about.html">About</a>
+        <!-- <a href="">Contact</a> -->
+      </nav>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm">
+          <img src="../img/projects_tapx.png">
+        </div>
+        <div class="col-sm">
+          <img src="../img/subprojects_tapx.jpg">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(function(){
+        var $container = $('#container');
+        $container.imagesLoaded( function(){
+          $container.masonry({
+            itemSelector : '.box'
+          });
+        });
+
+      });
+    </script>
+  </body>
+</html>

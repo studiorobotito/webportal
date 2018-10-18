@@ -30,6 +30,7 @@ body{
 
 img{
   max-width: 100%;
+  max-height:600px;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
@@ -38,7 +39,7 @@ img{
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-img:hover{
+a img:hover{
   box-shadow:rgba(0, 0, 0, 0.4) 0 3px 3px 0;
   -webkit-box-shadow:rgba(0, 0, 0, 0.4) 0 3px 3px 0;
   -moz-box-shadow:rgba(0, 0, 0, 0.4) 0 3px 3px 0;
@@ -72,7 +73,7 @@ a:hover{
 
 .no-padding_left{ padding-left: 0px}
 .row{ padding-bottom: 10px; }
-
+.constrained{ max-width: 800px; }
 
 /* -------------  Layout  ------------ */
 /* fluid 5 columns */
