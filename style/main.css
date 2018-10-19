@@ -46,10 +46,16 @@ a img:hover{
 }
 
 header{
-  font-size: 36px;
-  padding-bottom:10px;
+  font-size: 24px;
+  padding-bottom:30px;
   display: flex;
-  align-items: baseline; /* align vertical */
+  align-items: center; /* align vertical */
+  width:250px;
+}
+
+header a{
+  margin-left: 50px;
+  color: #424242;
 }
 
 nav{
@@ -68,12 +74,12 @@ a{
 }
 
 a:hover{
-  color:blue;
+  color:#ED1C24;
 }
 
 .no-padding_left{ padding-left: 0px}
 .row{ padding-bottom: 10px; }
-.constrained{ max-width: 800px; }
+.constrained{ max-width: 600px; }
 
 /* -------------  Layout  ------------ */
 /* fluid 5 columns */
